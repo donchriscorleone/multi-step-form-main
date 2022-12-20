@@ -1,17 +1,17 @@
 @font-face {
   font-family: "Ubuntu";
   font-weight: 400;
-  src: url(/assets/fonts/Ubuntu-Regular.ttf) format("truetype");
+  src: url(./assets/fonts/Ubuntu-Regular.ttf) format("truetype");
 }
 @font-face {
   font-family: "Ubuntu";
   font-weight: 700;
-  src: url(/assets/fonts/Ubuntu-Bold.ttf) format("truetype");
+  src: url(./assets/fonts/Ubuntu-Bold.ttf) format("truetype");
 }
 @font-face {
   font-family: "Ubuntu";
   font-weight: 500;
-  src: url(/assets/fonts/Ubuntu-Medium.ttf) format("truetype");
+  src: url(./assets/fonts/Ubuntu-Medium.ttf) format("truetype");
 }
 *, *::before, *::after {
   margin: 0;
@@ -670,7 +670,7 @@ main {
 }
 
 .sidebar {
-  background-image: url(/assets/images/bg-sidebar-mobile.svg);
+  background-image: url(./assets/images/bg-sidebar-mobile.svg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -748,7 +748,7 @@ main {
 
   .sidebar {
     border-radius: 10px;
-    background-image: url(/assets/images/bg-sidebar-desktop.svg);
+    background-image: url(./assets/images/bg-sidebar-desktop.svg);
   }
 
   .sidebar-wrapper {
