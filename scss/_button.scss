@@ -1,0 +1,39 @@
+@import './colors';
+
+.btn {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    font-size: 1.2rem;
+    padding: .65em 1em;
+}
+
+.btn[data-color=primary] {
+    background-color: $marine-blue;
+    color: $light-gray;
+}
+
+.btn[data-color=neutral] {
+    background-color: transparent;
+    color: $cool-gray;
+    transition: color 150ms;
+
+    &:hover {
+        color: $marine-blue;
+    }
+}
+
+
+.btn[data-type=stepper] {
+    border-radius: 100%;
+    border: 1px solid $white;
+    font-weight: 600;
+
+    &.active {
+        background-color: $light-blue;
+        color: $marine-blue;
+        border-color: transparent;
+    }
+}
+

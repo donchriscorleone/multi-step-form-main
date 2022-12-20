@@ -1,0 +1,29 @@
+.stepper {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.stepper .btn {
+    font-size: .75em;
+}
+
+.stepper-content {
+    display: none;
+}
+
+@media screen and (min-width: 50em) {
+    .stepper-content {
+        display: flex;
+        flex-direction: column;
+        gap: .4em;
+    }
+    
+    .stepper-number {
+        font-size: .75em;
+    }
+    
+    .stepper-desc {
+        font-size: .8em;
+    }
+}

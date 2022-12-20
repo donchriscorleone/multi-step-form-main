@@ -1,0 +1,102 @@
+@import './colors';
+
+.step {
+    --max-width: 20em;
+    display: flex;
+    flex-direction: column;
+
+    &[data-step="personal"] {
+        .step-content-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5em;
+        }
+    }
+
+    &[data-step="plan"] {
+        .step-content-wrapper {
+            display: grid;
+            row-gap: 1em;
+        }
+
+        .switcher {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2em;
+            background-color: $magnolia;
+            padding: .5em;
+
+            .switcher-label {
+                font-size: .85em;
+                color: $marine-blue;
+            }
+
+            .switcher-label[data-switch="yearly"] {
+                font-weight: 400;
+            }
+
+            .switcher-label[data-switch="monthly"] {
+                font-weight: 500;
+            }
+
+            &:has(input:checked) {
+                .switcher-label[data-switch="yearly"] {
+                    font-weight: 500;
+                }
+
+                .switcher-label[data-switch="monthly"] {
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+    &[data-step="addon"] {
+        .step-content-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+        }
+    }
+}
+
+.step-header {
+    display: flex;
+    flex-direction: column;
+    gap: .75em;
+
+    .step-title {
+        font-size: 1.7em;
+    }
+
+    .step-desc {
+        font-size: .85em;
+        line-height: 1.75;
+    }
+}
+
+.step-content {
+    margin-top: 2em;
+}
+
+.step-action {
+    margin-top: auto;
+}
+
+@media screen and (min-width: 50em) {
+    .step {
+        --max-width: 30em;
+
+        &[data-step="plan"] {
+            .step-content-wrapper {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1em;
+
+                .switcher {
+                    grid-column: 1 / 4;
+                }
+            }
+        }
+    }
+}

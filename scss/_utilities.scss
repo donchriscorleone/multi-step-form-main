@@ -1,0 +1,134 @@
+@import './_colors';
+
+// Text Colors
+.color-marine-blue {
+    color: $marine-blue;
+}
+
+.color-purplish-blue {
+    color: $purplish-blue;
+}
+
+.color-pastel-blue {
+    color: $pastel-blue;
+}
+
+.color-light-blue {
+    color: $light-blue;
+}
+
+.color-strawberry-red {
+    color: $strawberry-red;
+}
+
+.color-cool-gray {
+    color: $cool-gray;
+}
+
+.color-light-gray {
+    color: $light-gray;
+}
+
+.color-magnolia {
+    color: $magnolia;
+}
+
+.color-alabaster {
+    color: $alabaster;
+}
+
+.color-white {
+    color: $white;
+}
+
+// Background Colors
+.bg-marine-blue {
+    background-color: $marine-blue;
+}
+
+.bg-purplish-blue {
+    background-color: $purplish-blue;
+}
+
+.bg-pastel-blue {
+    background-color: $pastel-blue;
+}
+
+.bg-light-blue {
+    background-color: $light-blue;
+}
+
+.bg-strawberry-red {
+    background-color: $strawberry-red;
+}
+
+.bg-cool-gray {
+    background-color: $cool-gray;
+}
+
+.bg-light-gray {
+    background-color: $light-gray;
+}
+
+.bg-magnolia {
+    background-color: $magnolia;
+}
+
+.bg-alabaster {
+    background-color: $alabaster;
+}
+
+.bg-white {
+    background-color: $white;
+}
+
+.bg-transparent {
+    background-color: transparent;
+}
+
+// Font weights
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+// Others
+
+.container {
+    max-width: var(--max-width, 60em);
+    margin-inline: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.sr-only {
+    border: 0 !important;
+	clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
+	-webkit-clip-path: inset(50%) !important;
+    clip-path: inset(50%) !important;  /* 2 */
+	height: 1px !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	padding: 0 !important;
+	position: absolute !important;
+	width: 1px !important;
+	white-space: nowrap !important; 
+}
+
+.uppercase {
+    text-transform: uppercase;
+}

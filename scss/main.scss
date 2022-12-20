@@ -1,0 +1,130 @@
+@import './colors';
+
+main {
+    --max-width: 35em;
+    height: 100vh;
+    background-color: $white;
+}
+
+.main-wrapper {
+    display: grid;
+    grid-template-rows: 25% auto;
+    height: 100%;
+}
+
+.sidebar {
+    background-image: url(/assets/images/bg-sidebar-mobile.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sidebar-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin-top: 2em;
+    margin-inline: auto;
+    max-width: 90%;
+}
+
+.steps-container {
+    background-color: $magnolia;
+
+    &.thank-you {
+        .steps-wrapper {
+            padding: 3rem;
+        }
+    }
+}
+
+.steps-wrapper {
+    padding: 1.5rem;
+    border-radius: 10px;
+    transform: translateY(-70px);
+    background-color: $white;
+    width: 90%;
+    margin-inline: auto;
+    position: relative;
+    
+
+    .step {
+        transition: all .35s;
+
+        &:not(&.active) {
+            left: -1000px;
+        }
+
+        &.active {
+            left: initial;
+        }
+    }
+}
+
+.form {
+    display: grid;
+    grid-template-rows: 450px auto;
+}
+
+.form-actions {
+    padding-inline: 1rem;
+}
+
+.form-actions {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@media screen and (min-width: 50em) {
+    body {
+        display: grid;
+        place-content: center;
+        height: 100vh;
+    }
+    
+    main {
+        --max-width: 50em;
+        max-height: 550px;
+        border-radius: 10px;
+        padding: .5rem;
+    }
+
+    .main-wrapper {
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 100%;
+        row-gap: 3rem;
+    }
+
+    .sidebar {
+        border-radius: 10px;
+        background-image: url(/assets/images/bg-sidebar-desktop.svg);
+    }
+
+    .sidebar-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-inline: .75em;
+    }
+
+    .steps-container {
+        background-color: $white;
+        padding-inline: 3rem;
+
+        &.thank-you {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .steps-wrapper {
+        transform: translateY(0);
+        width: 100%;
+    }
+
+    .form-actions {
+        padding-inline: 4rem;
+    }
+}

@@ -1,0 +1,41 @@
+@import './colors';
+
+.form-field {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10px;
+
+    .form-field-error-message {
+        justify-self: end;
+        transform: scale(0);
+        transition: scale 120ms;
+        font-size: .75em;
+    }
+}
+
+.form-field.form-field-error {
+    .form-field-error-message {
+        transform: scale(1);
+    }
+}
+
+.form-field label {
+    font-size: .85em;
+}
+
+.form-field input {
+    grid-column: 1 / 3;
+    padding: .75em .75em;
+    border: .5px solid $cool-gray;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+
+    &:focus-within, &:hover {
+        outline: 2px solid $purplish-blue;
+    }
+
+    &::placeholder {
+        color: $cool-gray;
+    }
+}

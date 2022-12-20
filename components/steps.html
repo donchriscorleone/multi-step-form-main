@@ -1,0 +1,193 @@
+
+  <section class="step step-1 | container" data-step="personal">
+    <div class="step-header">
+      <span class="step-title | fw-700 color-marine-blue">Personal Info</span>
+      <span class="step-desc | color-cool-gray">Please provide your name, email address, and phone number.</span>
+    </div>
+
+    <div class="step-content">
+      <div class="step-content-wrapper">
+        <div class="form-field">
+          <label class="color-marine-blue" for="name">Name</label>
+          <span class="form-field-error-message | color-strawberry-red fw-700">Name is required</span>
+          <input class="color-marine-blue fw-500" placeholder="e.g. Stephen King" type="text" name="name" id="name" required>
+        </div>
+        <div class="form-field">
+          <label class="color-marine-blue" for="name">Email Address</label>
+          <span class="form-field-error-message | color-strawberry-red fw-700">Email is required</span>
+          <input class="color-marine-blue fw-500" placeholder="e.g. stephenking@lorem.com" type="text" name="name" id="name" required>
+        </div>
+        <div class="form-field">
+          <label class="color-marine-blue" for="name">Phone Number</label>
+          <span class="form-field-error-message | color-strawberry-red fw-700">Email is required</span>
+          <input class="color-marine-blue fw-500" placeholder="e.g + 123 456 789" type="text" name="name" id="name" required>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="step step-2 | container" data-step="plan">
+    <div class="step-header">
+      <span class="step-title | fw-700 color-marine-blue">Select your plan</span>
+      <span class="step-desc | color-cool-gray">You have the option of monthly or yearly billing.</span>
+    </div>
+
+    <div class="step-content">
+      <div class="step-content-wrapper">
+        <button class="plan" aria-label="Arcade">
+          <div class="plan-wrapper">
+            <div class="plan-icon">
+              <svg class="icon">
+                <use xlink:href="/assets/sprites/icon-plans.svg#icon-arcade"></use>
+              </svg>
+            </div>
+            <div class="plan-content">
+              <span class="plan-title | color-marine-blue">Arcade</span>
+              <span class="plan-price | color-cool-gray">$9/mo</span>
+            </div>
+          </div>
+        </button>
+
+        <button class="plan" aria-label="Advanced">
+          <div class="plan-wrapper">
+            <div class="plan-icon">
+              <svg class="icon">
+                <use xlink:href="/assets/sprites/icon-plans.svg#icon-advanced"></use>
+              </svg>
+            </div>
+            <div class="plan-content">
+              <span class="plan-title | color-marine-blue">Advanced</span>
+              <span class="plan-price | color-cool-gray">$12/mo</span>
+            </div>
+          </div>
+        </button>
+
+        <button class="plan" aria-label="Pro">
+          <div class="plan-wrapper">
+            <div class="plan-icon">
+              <svg class="icon">
+                <use xlink:href="/assets/sprites/icon-plans.svg#icon-pro"></use>
+              </svg>
+            </div>
+            <div class="plan-content">
+              <span class="plan-title | color-marine-blue">Pro</span>
+              <span class="plan-price | color-cool-gray">$15/mo</span>
+            </div>
+          </div>
+        </button>
+
+        <div class="switcher">
+          <span class="switcher-label" data-switch="monthly">Monthly</span>
+          <div class="toggle-container">
+            <label class="toggle-label" for="toggle" aria-label="Toggle">
+              <div class="toggle-ball bg-white"></div>
+            </label>
+            <input class="sr-only" type="checkbox" name="toggle" id="toggle">
+          </div>
+          <span class="switcher-label" data-switch="yearly">Yearly</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="step step-3 | container" data-step="addon">
+    <div class="step-header">
+      <span class="step-title | fw-700 color-marine-blue">Pick add-ons</span>
+      <span class="step-desc | color-cool-gray">Add-ons help enhance your gaming experience.</span>
+    </div>
+
+    <div class="step-content">
+      <div class="step-content-wrapper">
+        <div class="addon">
+          <div class="addon-wrapper">
+            <div class="addon-checkbox-container">
+              <label class="checkbox-form-control" for="checkbox-1" aria-label="Checkbox 1">
+                <input type="checkbox" name="checkbox-1" id="checkbox-1">
+              </label>
+            </div>
+            <div class="addon-content">
+              <span class="addon-title | color-marine-blue fw-500">Online service</span>
+              <div class="addon-desc | color-cool-gray">Access to multiplayer games</div>
+            </div>
+            <div class="addon-price-container">
+              <span class="addon-price | color-purplish-blue">+$2/mo</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="addon">
+          <div class="addon-wrapper">
+            <div class="addon-checkbox-container">
+              <label class="checkbox-form-control" for="checkbox-1" aria-label="Checkbox 1">
+                <input type="checkbox" name="checkbox-1" id="checkbox-1">
+              </label>
+            </div>
+            <div class="addon-content">
+              <span class="addon-title | color-marine-blue fw-500">Larger storage</span>
+              <div class="addon-desc | color-cool-gray">Extra 1TB of cloud save</div>
+            </div>
+            <div class="addon-price-container">
+              <span class="addon-price | color-purplish-blue">+$2/mo</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="addon">
+          <div class="addon-wrapper">
+            <div class="addon-checkbox-container">
+              <label class="checkbox-form-control" for="checkbox-1" aria-label="Checkbox 3">
+                <input type="checkbox" name="checkbox-1" id="checkbox-1">
+              </label>
+            </div>
+            <div class="addon-content">
+              <span class="addon-title | color-marine-blue fw-500">Customizable profile</span>
+              <div class="addon-desc | color-cool-gray">Custom theme on your profile</div>
+            </div>
+            <div class="addon-price-container">
+              <span class="addon-price | color-purplish-blue">+$2/mo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> 
+
+  <section class="step step-4 | container" data-step="preview">
+    <div class="step-header">
+      <span class="step-title | fw-700 color-marine-blue">Finishing up</span>
+      <span class="step-desc | color-cool-gray">Double-check everything looks OK before confirming.</span>
+    </div>
+
+    <div class="step-content">
+      <div class="step-content-wrapper">
+        <div class="preview">
+          <div class="preview-wrapper">
+            <div class="preview-header | flex">
+              <div class="preview-header-wrapper | flex">
+                <span class="preview-title | color-marine-blue fw-700">Arcade (<em class="plan-type">Yearly</em>)</span>
+                <button class="change-plan | color-cool-gray">Change</button>
+              </div>
+              <span class="preview-plan-price | color-marine-blue fw-700">$90/yr</span>
+            </div>
+        
+            <ul class="preview-list">
+              <li class="preview-list__item">
+                <span class="list-title | color-cool-gray">Online service</span>
+                <span class="list-price | color-marine-blue">+$10/<em class="per-plan-price">yr</em></span>
+              </li>
+              <li class="preview-list__item">
+                <span class="list-title | color-cool-gray">Online service</span>
+                <span class="list-price | color-marine-blue">+$10/<em class="per-plan-price">yr</em></span>
+              </li>
+            </ul>
+          </div>
+        
+          <div class="preview-total | flex">
+            <span class="preview-total-title | color-cool-gray">Total (per <em class="per-plan-type">year</em>)</span>
+            <span class="preview-total-price | color-purplish-blue fw-500">+$120/<em class="per-plan-price">yr</em></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

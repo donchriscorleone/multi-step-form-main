@@ -1,0 +1,43 @@
+@import './colors';
+
+.addon {
+    border: 1.2px solid $cool-gray;
+    border-radius: 10px;
+    padding: .85em;
+    cursor: pointer;
+    // Enter a max-width here or on the parent of this component.
+
+    &.selected {
+        border: 1.2px solid $purplish-blue;
+        background-color: $alabaster;
+    }
+
+    &:hover {
+        border: 1.2px solid $purplish-blue;
+    }
+}
+
+.addon-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.addon-content {
+    .addon-title {
+        margin-bottom: .45em;
+        display: inline-block;
+    }
+
+    .addon-desc {
+        font-size: .85rem;
+    }
+}
+
+.addon-price-container {
+    margin-left: auto;
+
+    .addon-price {
+        font-size: .75rem;
+    }
+}

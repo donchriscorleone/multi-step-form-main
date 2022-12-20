@@ -1,0 +1,78 @@
+@import './colors';
+
+.checkbox-form-control {
+    // Sizes are dependent on this font size
+    font-size: 1rem; 
+    font-weight: 700;
+    line-height: 1.1;
+    cursor: pointer;
+}
+
+.checkbox-form-control:has(input[type=checkbox]:checked) {
+    color: red;
+    // TODO: remove this. Only for debugger purposes only.
+}
+
+.checkbox-form-control input[type=checkbox] {
+    /* For iOS < 15 to remove gradient background */
+    appearance: none;
+    background-color: transparent;
+    /* Not removed via appearance */
+    margin: 0;
+
+    border: .3px solid $cool-gray; 
+    // TODO: change border if not needed
+    padding: .1em;
+    // TODO: change padding if not needed
+
+    vertical-align: middle;
+
+    color: $marine-blue;
+    width: 1.15em;
+    height: 1.15em;
+    // TODO: adjust width and height if needed
+    border-radius: 5px;
+    position: relative;
+
+    display: grid;
+    place-content: center;
+}
+
+.checkbox-form-control input[type=checkbox]::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 5px;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+
+    background-color: $purplish-blue;
+    // TODO: Change bg if needed
+}
+
+// Checkmark
+.checkbox-form-control input[type=checkbox]::after {
+    content: '';
+    background-color: $white;
+    // TODO: change bg if needed.
+
+    width: .5em;
+    height: .5em;
+    display: block;
+    transform: scale(0);
+    transform-origin: bottom left;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+// Animations
+.checkbox-form-control input[type=checkbox]:checked::before {
+    transform: scale(1);
+}
+
+.checkbox-form-control input[type=checkbox]:checked::after {
+    transform: scale(1);
+}
+
